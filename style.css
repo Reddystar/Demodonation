@@ -1,0 +1,162 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body & Font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header & Navigation Bar */
+header {
+    background-color: #2d87f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #f2c94c;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f39c12;
+}
+
+/* Donors Section */
+.donors-list {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.donors-list h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.donors-list ul {
+    list-style-type: none;
+}
+
+.donors-list ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2d87f0;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .donors-list h2 {
+        font-size: 28px;
+    }
+
+    .donors-list ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer .social-icons a {
+        font-size: 18px;
+    }
+}
